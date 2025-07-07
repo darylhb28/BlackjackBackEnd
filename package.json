@@ -1,0 +1,30 @@
+{
+  "name": "capstone_back_end",
+  "version": "1.0.0",
+  "description": "1. Project Elevator Pitch     A website/app for users to play blackjack while getting reccomdation on basic strategy moves as they play hands. With each hand they will get a message on a reccomended action.",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node --watch --env-file=.env server.js",
+    "db:schema": "psql -d blackjack -f db/schema.sql",
+    "db:seed": "node --env-file=.env db/seed.js",
+    "db:reset": "npm run db:schema && npm run db:seed"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NatalieChurch/Capstone_Back_End.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NatalieChurch/Capstone_Back_End/issues"
+  },
+  "homepage": "https://github.com/NatalieChurch/Capstone_Back_End#readme",
+  "dependencies": {
+    "bcrypt": "^6.0.0",
+    "cors": "^2.8.5",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3"
+  }
+}
