@@ -21,8 +21,16 @@ const {rows: [dealt]} = await db.query(convert, [card.card_id])
 return dealt
 }
 
+// splits hand
+export async function splitHand({is_player, user_id, hand_num}){
+const sql = `SELECT * FROM hand WHERE user_id = $1 AND hand_num = $2`
+const {rows: [card]} = await db.query(sql, [user_id, hand_num])
 
+const update = `UPDATE hand SET hand_num = $1 WHERE user_id = $2 AND card_id = $3
+RETURNING *`
+const handInt = Number(hand_num) + 1
+const {rows: splitHand} = await db.query(update, [handInt, user_id, card.card_id])
+return splitHand
 
-//splits hand
-
+}
 

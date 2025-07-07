@@ -26,4 +26,6 @@ export async function getUserByID({id}){
     SELECT * FROM users 
     WHERE id = $1;
     `
+    const {rows: [user]} = await db.query(sql, [id])
+    return user
 }
