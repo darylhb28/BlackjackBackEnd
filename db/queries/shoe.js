@@ -20,3 +20,11 @@ export async function newGame(deck_num =1){
         await db.query(load, [card.id, deck_num])
     }
 }
+
+//returns all cards undrawn in shoe
+export async function checkShoe(){
+    const sql = `SELECT * FROM shoe WHERE drawn = false`
+
+    const {rows:shoe} = await db.query(sql)
+    return shoe
+}
