@@ -17,6 +17,11 @@ await createUser({
     password: "1234"
 })
 
+await createUser({
+    email: "newuser1@mail.com",
+    password: "1234"
+})
+
 for (const card of cards){
     await seedCards(card)
 }
