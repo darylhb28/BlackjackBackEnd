@@ -24,7 +24,7 @@ app.use("/shoe", shoeRouter)
 
 
 app.use((err, req, res, next) => {
-  console.error(err);
+  console.log(err);
   res.status(500).send("Sorry! Something went wrong.");
 });
 

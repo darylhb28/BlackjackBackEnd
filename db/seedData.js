@@ -439,5 +439,29 @@ export const strategyData = [
   { players_hand: '20', dealers_upcard: '8', recc_action: 'S', hand_type: 'pair' },
   { players_hand: '20', dealers_upcard: '9', recc_action: 'S', hand_type: 'pair' },
   { players_hand: '20', dealers_upcard: '10', recc_action: 'S', hand_type: 'pair' },
-  { players_hand: '20', dealers_upcard: 'A', recc_action: 'S', hand_type: 'pair' }
+  { players_hand: '20', dealers_upcard: 'A', recc_action: 'S', hand_type: 'pair' },
+
+  // Player hand 21 (soft)
+{ players_hand: '21', dealers_upcard: '2', recc_action: 'S', hand_type: 'soft' },
+{ players_hand: '21', dealers_upcard: '3', recc_action: 'S', hand_type: 'soft' },
+{ players_hand: '21', dealers_upcard: '4', recc_action: 'S', hand_type: 'soft' },
+{ players_hand: '21', dealers_upcard: '5', recc_action: 'S', hand_type: 'soft' },
+{ players_hand: '21', dealers_upcard: '6', recc_action: 'S', hand_type: 'soft' },
+{ players_hand: '21', dealers_upcard: '7', recc_action: 'S', hand_type: 'soft' },
+{ players_hand: '21', dealers_upcard: '8', recc_action: 'S', hand_type: 'soft' },
+{ players_hand: '21', dealers_upcard: '9', recc_action: 'S', hand_type: 'soft' },
+{ players_hand: '21', dealers_upcard: '10', recc_action: 'S', hand_type: 'soft' },
+{ players_hand: '21', dealers_upcard: 'A', recc_action: 'S', hand_type: 'soft' },
+
+// Player hand 21 (hard)
+{ players_hand: '21', dealers_upcard: '2', recc_action: 'S', hand_type: 'hard' },
+{ players_hand: '21', dealers_upcard: '3', recc_action: 'S', hand_type: 'hard' },
+{ players_hand: '21', dealers_upcard: '4', recc_action: 'S', hand_type: 'hard' },
+{ players_hand: '21', dealers_upcard: '5', recc_action: 'S', hand_type: 'hard' },
+{ players_hand: '21', dealers_upcard: '6', recc_action: 'S', hand_type: 'hard' },
+{ players_hand: '21', dealers_upcard: '7', recc_action: 'S', hand_type: 'hard' },
+{ players_hand: '21', dealers_upcard: '8', recc_action: 'S', hand_type: 'hard' },
+{ players_hand: '21', dealers_upcard: '9', recc_action: 'S', hand_type: 'hard' },
+{ players_hand: '21', dealers_upcard: '10', recc_action: 'S', hand_type: 'hard' },
+{ players_hand: '21', dealers_upcard: 'A', recc_action: 'S', hand_type: 'hard' },
 ];
