@@ -12,7 +12,7 @@ export async function getGameStatsByUserId(user_id) {
 }
 
 // Adds 1 to the number of hands played, lost, won, or pushed (depending on what was done)
-export async function incrementStat(user_id, statColumn) {
+export async function addToStat(user_id, statColumn) {
     // if () makes it so only these stats can be changed, otherwise there's an error
   if (!['hands_played', 'hands_won', 'hands_lost', 'hands_pushed'].includes(statColumn)) {
     throw new Error("Invalid stat column");
