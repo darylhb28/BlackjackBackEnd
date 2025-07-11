@@ -31,7 +31,7 @@ router.route("/login").post(async(req, res, next)=>{
         {id: userProfile.id, email: userProfile.email},
         process.env.JWT_SECRET
     );
-    res.status(200).json(token)
+    res.status(200).json({token})
 })
 
 //POST /users/register
@@ -45,7 +45,7 @@ router.route("/register").post(async(req, res, next)=> {
     const newUser = await createUser({email, password})
     const token = jwt.sign({id: newUser.id, email: newUser.email}, process.env.JWT_SECRET)
 
-    res.status(200).json(token)
+    res.status(200).json({token})
 })
 
 //GET /users/me
