@@ -46,14 +46,17 @@ CREATE TABLE shoe (
     drawn BOOLEAN DEFAULT FALSE
 );
 
-CREATE TABLE games (
+CREATE TABLE gamesPlayed (
     id SERIAL PRIMARY KEY, 
     user_id INTEGER NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users(id)
-    ON DELETE CASCADE, 
-    wins INTEGER, 
-    losses INTEGER, 
-    pushes INTEGER
+    ON DELETE CASCADE,
+    hands_played INTEGER DEFAULT 0,  
+    hands_lost INTEGER DEFAULT 0, 
+    hands_won INTEGER DEFAULT 0, 
+    hands_pushed INTEGER DEFAULT 0, 
+    current_streak INTEGER DEFAULT 0, 
+    max_streak INTEGER DEFAULT 0
 );
 
 
