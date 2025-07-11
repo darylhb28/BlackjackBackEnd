@@ -46,7 +46,7 @@ CREATE TABLE shoe (
     drawn BOOLEAN DEFAULT FALSE
 );
 
-CREATE TABLE gamesPlayed (
+CREATE TABLE "gamesPlayed" (
     id SERIAL PRIMARY KEY, 
     user_id INTEGER NOT NULL,
     FOREIGN KEY (user_id) REFERENCES users(id)

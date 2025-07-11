@@ -7,6 +7,7 @@ import usersRouter from "./api/users.js"
 import strategyRouter from "./api/strategy.js"
 import handRouter from "./api/hand.js"
 import shoeRouter from "./api/shoe.js"
+import gamesRouter from "./api/games.js";
 
 
 app.use(cors());
@@ -20,6 +21,8 @@ app.use("/strategy", strategyRouter )
 app.use("/hand", handRouter)
 
 app.use("/shoe", shoeRouter)
+
+app.use("/api/games", gamesRouter);
 
 
 

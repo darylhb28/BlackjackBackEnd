@@ -1,7 +1,8 @@
 import express from "express";
-import { getGameStatsByUserId, addToStat, updateStreak } from "../db/queries/games";
-import { verifyToken } from "../app.js"
-import { verify } from "jsonwebtoken";
+import { getGameStatsByUserId, addToStat, updateStreak } from "../db/queries/games.js";
+import { verifyToken } from "../app.js";
+import jwt from "jsonwebtoken";
+const { verify } = jwt
 
 const router = express.Router();
 
