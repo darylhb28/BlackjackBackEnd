@@ -22,7 +22,7 @@ app.use("/hand", handRouter)
 
 app.use("/shoe", shoeRouter)
 
-app.use("/api/games", gamesRouter);
+app.use("/games", gamesRouter);
 
 
 
