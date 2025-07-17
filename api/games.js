@@ -29,15 +29,5 @@ router.post("/increment", verifyToken, async (req, res, next) => {
     }
 });
 
-// // Changes the user's win streak by the results of the game
-// router.post("/streak", verifyToken, async (req, res, next) => {
-//     const {outcome} = req.body;
-//     try {
-//         await updateStreak(req.user.id, outcome);
-//         res.status(204).json(outcome);
-//     } catch (err) {
-//         next(err);
-//     }
-// });
 
 export default router;
